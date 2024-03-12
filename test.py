@@ -5,6 +5,7 @@ def extract_positions(rec, title, pix_size, flip_traj, drift_dir):
     # Number of cells per recording
     num_cells = int(rec.shape[1] / 3) - 1
     num_times = rec.shape[0]
+    #Little change
 
     # Initialize arrays to store cell positions
     traj = {'cell_posx': np.zeros((num_cells, num_times)),
