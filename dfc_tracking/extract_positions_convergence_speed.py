@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def extract_positions_convergence_speed(rec, title, pix_size, plot_color):
+def extract_positions_convergence_speed(rec, pix_size):
 
     # Number of cells per recording
     num_cells = rec.shape[1] // 3  # Assuming each cell has x, y, and z columns
