@@ -7,4 +7,6 @@ The body plan of vertebrates appears externally bilaterally symmetric. Nonethele
 Here we reveal a novel role for the Meteorin protein family in the establishment of the left-right axis and in the formation of the Kupffer’s vesicle, the Node equivalent structure in zebrafish. We show that the genetic inactivation of each or all three members of the zebrafish Meteorin family (metrn, metrn-like 1 and metrn-like 2) leads to defects in properties of the Kupffer’s vesicle, caused by impaired assembly and migration of the Kupffer’s vesicle forming dorsal forerunner cells. In addition, we demonstrate that Meteorins genetically interact with integrins ItgαV and Itgβ1b regulating the dorsal forerunner cell clustering and that meteorins loss-of-function results in disturbed Nodal factor expression and consequently in randomized or symmetric heart looping and jogging.
 These results identify a new role for the Meteorin protein family in the left-right asymmetry patterning during embryonic vertebrate development.
 
+<img width="1256" alt="Screenshot 2024-03-26 at 12 16 13 PM" src="https://github.com/jboulanger91/meteorin/assets/62715309/ef1f4ad8-33c8-4236-bfda-fd5272f156c9">
+
 MSD Analysis @msdanalyzer is from https://github.com/tinevez/msdanalyzer 
