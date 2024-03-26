@@ -110,6 +110,17 @@ jitter = 0.05
 group1_x_jittered = np.random.normal(1, jitter, size=len(all_wt_cr))
 group2_x_jittered = np.random.normal(2, jitter, size=len(all_mut_cr))
 
+## Speed analysis 
+all_wt_ms = np.concatenate((wt1_mig_speed, wt2_mig_speed,wt3_mig_speed), axis=0)
+all_mut_ms = np.concatenate((mut1_mig_speed, mut2_mig_speed,mut3_mig_speed), axis=0)
+mean_group1_ms = np.mean(all_wt_ms); mean_group2_ms = np.mean(all_mut_ms)
+std_group1_ms = np.std(all_wt_ms); std_group2_ms = np.std(all_mut_ms)
+t_stat_ms, p_val_ms = ttest_ind(all_wt_ms, all_mut_ms)
+
+# Add jitter to scatter points
+group1_x_jittered_ms = np.random.normal(1, jitter, size=len(all_wt_ms))
+group2_x_jittered_ms = np.random.normal(2, jitter, size=len(all_mut_ms))
+
 # Create subplots
 fig, axs = plt.subplots(1, 2, figsize=(10, 5), subplot_kw=dict(box_aspect=1))
 
@@ -123,26 +134,15 @@ axs[0].set_title('Convergence ratio', fontsize=12)
 axs[0].legend()
 axs[0].text(1.5, max(mean_group1, mean_group2) + 0.5, f'p-value: {p_val:.4f}', ha='center', fontsize=12)
 
-## Speed analysis 
-all_wt_ms = np.concatenate((wt1_mig_speed, wt2_mig_speed,wt3_mig_speed), axis=0)
-all_mut_ms = np.concatenate((mut1_mig_speed, mut2_mig_speed,mut3_mig_speed), axis=0)
-mean_group1 = np.mean(all_wt_ms); mean_group2 = np.mean(all_mut_ms)
-std_group1 = np.std(all_wt_ms); std_group2 = np.std(all_mut_ms)
-t_stat, p_val = ttest_ind(all_wt_ms, all_mut_ms)
-
-# Add jitter to scatter points
-group1_x_jittered = np.random.normal(1, jitter, size=len(all_wt_ms))
-group2_x_jittered = np.random.normal(2, jitter, size=len(all_mut_ms))
-
 # Plotting Speed analysis
-axs[1].bar([1, 2], [mean_group1, mean_group2], yerr=[std_group1, std_group2], capsize=5, color=['grey', 'cyan'])
-axs[1].scatter(group1_x_jittered, all_wt_ms, color='k', label='WT')
-axs[1].scatter(group2_x_jittered, all_mut_ms, color='k', label='Mut')
+axs[1].bar([1, 2], [mean_group1_ms, mean_group2_ms], yerr=[std_group1_ms, std_group2_ms], capsize=5, color=['grey', 'cyan'])
+axs[1].scatter(group1_x_jittered_ms, all_wt_ms, color='k', label='WT')
+axs[1].scatter(group2_x_jittered_ms, all_mut_ms, color='k', label='Mut')
 axs[1].set_xticks([1, 2])
 axs[1].set_xticklabels(['WT', 'Mut'], fontsize=12)
 axs[1].set_title('Migration speed', fontsize=12)
 axs[1].legend()
-axs[1].text(1.5, max(mean_group1, mean_group2) + 0.5, f'p-value: {p_val:.4f}', ha='center', fontsize=12)
+axs[1].text(1.5, max(mean_group1_ms, mean_group2_ms) + 55, f'p-value: {p_val_ms:.4f}', ha='center', fontsize=12)
 
 plt.tight_layout()
 plt.savefig('convergence_ratio_migration_speed.pdf', bbox_inches='tight')
