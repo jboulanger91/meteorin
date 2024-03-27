@@ -13,6 +13,9 @@ set(0,'DefaultFigureWindowStyle','docked')
 %https://sbalzarini-lab.org/MosaicSuiteDoc/install.html
 %Tutorial
 %https://sbalzarini-lab.org/MosaicToolboxSuite/ParticleTracker.html
+%MSD Analyser 
+Add @msdanalyzer to your path 
+http://tinevez.github.io/msdanalyzer/tutorial/MSDTuto_brownian.html
 
 %Acquisition parameters
 res=[0.2513,0.2513]; %microscope resolution in micrometer, x,y
@@ -133,8 +136,7 @@ for file_idx=1:length(path)
 end
 
 %%
-%MSD Analysis @msdanalyzer
-%Using this excellent tutorial: http://tinevez.github.io/msdanalyzer/tutorial/MSDTuto_brownian.html
+%MSD Analysis 
 %Trajectories >1 sec tracking and <8sec
 
 %Extract WT trajectories
