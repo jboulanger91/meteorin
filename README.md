@@ -1,6 +1,8 @@
-code for Eggeler et al., in preparation
+code for Eggeler et al., in review @Elife
 
-https://www.biorxiv.org/content/10.1101/2023.11.23.568438v1
+Meteorins regulate the formation of the left-right organizer and the establishment of vertebrate body asymmetry
+F Eggeler, J Boulanger-Weill, F De Santis, L Belleri, K Duroure, TO Auer, ...
+bioRxiv, 2023.11. 23.568438
 
 **ABSTRACT**
 The body plan of vertebrates appears externally bilaterally symmetric. Nonetheless the positioning and morphology of internal organs often display a strict left-right (L-R) asymmetry that is essential for their functions. During vertebrate embryonic development left-right symmetry-breaking is innated by a ciliated organ called the Node or left-right organizer. Within the Node, a leftward flow of extraembryonic fluid named the Nodal flow mediates the asymmetric expressions of Nodal factors. Although downstream Nodal pathway components leading to the establishment of the embryonic left-right axis are well known, less is known about the development and formation of the embryonic Node itself.
