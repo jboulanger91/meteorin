@@ -1,4 +1,4 @@
-code for Eggeler et al., in review @Elife
+code for Eggeler et al., accepted @Elife
 
 Meteorins regulate the formation of the left-right organizer and the establishment of vertebrate body asymmetry
 F Eggeler, **J Boulanger-Weill**, F De Santis, L Belleri, K Duroure, TO Auer, ...
