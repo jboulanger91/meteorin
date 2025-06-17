@@ -5,7 +5,7 @@ Code for analyzing fluorescent beads movement and cells migration.
 
 Authors
 -------
-### Jonathan Boulanger-Weill - Institut de la Vision, Paris 
+Jonathan Boulanger-Weill - Institut de la Vision, Paris 
 
 Dependencies
 ------------
