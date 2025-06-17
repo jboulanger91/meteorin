@@ -1,7 +1,7 @@
 
 [![DOI code](https://zenodo.org/badge/DOI/10.5281/zenodo.15622176.svg)](https://doi.org/10.5281/zenodo.15622176)
 
-Code for analysing beads movement and cells migration.   
+Code for analyzing beads movement and cells migration.   
 
 Authors
 -------
